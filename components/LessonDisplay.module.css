@@ -1,0 +1,29 @@
+.root { font-family: var(--font-body); font-size: 14px; line-height: 1.85; color: var(--text); }
+.h1 { font-family: var(--font-display); font-size: 22px; color: var(--white); margin: 0 0 22px; padding-bottom: 14px; border-bottom: 1px solid var(--card-border); font-weight: 700; }
+.h2 { font-family: var(--font-display); font-size: 16px; margin: 34px 0 12px; display: flex; align-items: center; gap: 10px; font-weight: 700; }
+.h2::before { content: ''; display: inline-block; width: 4px; height: 18px; border-radius: 2px; flex-shrink: 0; }
+.h2sm { font-size: 14px; }
+.stageC { color: #ff9d4d; } .stageC::before { background: #ff9d4d; }
+.stageR { color: #4ddfff; } .stageR::before { background: #4ddfff; }
+.stageA { color: #b57bff; } .stageA::before { background: #b57bff; }
+.stageL { color: #00e5a0; } .stageL::before { background: #00e5a0; }
+.stageN { color: var(--accent); } .stageN::before { background: var(--accent); }
+.h3 { font-size: 12px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 1.2px; margin: 20px 0 8px; }
+.p { margin-bottom: 10px; }
+.ul, .ol { padding-left: 22px; margin-bottom: 12px; }
+.li { margin-bottom: 5px; }
+.hr { border: none; border-top: 1px solid var(--card-border); margin: 24px 0; }
+.tableWrap { overflow-x: auto; margin: 18px 0; border-radius: 10px; border: 1px solid var(--card-border); }
+.table { width: 100%; border-collapse: collapse; font-size: 13px; min-width: 480px; }
+.table th { background: rgba(0,194,255,.08); color: var(--accent); font-weight: 700; font-size: 11px; letter-spacing: 1.1px; text-transform: uppercase; padding: 11px 16px; text-align: left; border-bottom: 1px solid var(--card-border); }
+.table th:not(:last-child) { border-right: 1px solid var(--card-border); }
+.table td { padding: 11px 16px; vertical-align: top; line-height: 1.65; color: var(--text); border-bottom: 1px solid rgba(14,45,82,.6); }
+.table td:not(:last-child) { border-right: 1px solid rgba(14,45,82,.6); }
+.table tr:last-child td { border-bottom: none; }
+.table tr:nth-child(even) td { background: rgba(4,9,15,.5); }
+@media print {
+  .h1, .h2 { color: black !important; }
+  .table th { background: #f0f0f0 !important; color: #333 !important; }
+  .tableWrap { border: 1px solid #ccc !important; }
+  .table td { color: black !important; }
+}
