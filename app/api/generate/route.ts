@@ -65,7 +65,7 @@ export async function POST(req: NextRequest) {
       method: "POST",
       headers: { "Content-Type": "application/json", "Authorization": `Bearer ${apiKey}` },
       body: JSON.stringify({
-        model: "llama-3.3-70b-versatile",
+           model: "llama3-70b-8192",
         max_tokens: 4000,
         temperature: 0.7,
         messages: [
