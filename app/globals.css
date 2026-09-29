@@ -1,0 +1,15 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --bg: #060d1a; --card: #0b1829; --card-border: #0e2d52;
+  --accent: #00c2ff; --accent2: #7b61ff; --accent-glow: rgba(0,194,255,0.12);
+  --green: #00e5a0; --text: #d6eaf8; --muted: #5d8aaa;
+  --white: #ffffff; --danger: #ff5252; --input-bg: #04090f; --input-border: #0e2d52;
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'DM Sans', system-ui, sans-serif;
+}
+html { scroll-behavior: smooth; }
+body { background: var(--bg); color: var(--text); font-family: var(--font-body); font-size: 15px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+@media print {
+  .no-print { display: none !important; }
+  body { background: white; color: black; }
+}
